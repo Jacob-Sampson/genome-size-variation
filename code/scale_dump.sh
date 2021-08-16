@@ -14,7 +14,7 @@ dfile=$1
 awk -v f1=$fact1 -v f2=$fact2 '
 function normBin(num, factor){
     if(num/factor < 0.5)
-    retrun 0 
+    return 0 
     return int(log(num/factor/0.5)/log(1.1))
 }
 {
