@@ -1,10 +1,11 @@
-# Script to bin mulitplicitied in joined k-mer dumps
+# Script to bin multiplicities in joined k-mer dumps
 # Assumes three columns, applies the function normBin to columns 2 and 3.
 # USAGE bash scale_dum.sh <joined dump> <noramalisation factor 1> <normalisation factor 2>
 
-# Normalisation factors for spectra read fromthe command line. NB $1 and $2 have a different meaning in the awk string.
+# The normalisation factors for spectra are read from the command line:
 fact1=$2
 fact2=$3
+# NB $1, $2, and $3 have a different meaning inside the awk string below.
 
 # Location of the dump file
 dfile=$1
